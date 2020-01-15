@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('fonts/Roboto-Medium-webfont.eot');
+    src: url('fonts/Roboto-Medium-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Medium-webfont.woff') format('woff'),
+         url('fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('fonts/Roboto-Light-webfont.eot');
+    src: url('fonts/Roboto-Light-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Light-webfont.woff') format('woff'),
+         url('fonts/Roboto-Light-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoblack';
+    src: url('fonts/Roboto-Black-webfont.eot');
+    src: url('fonts/Roboto-Black-webfontd41d.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Black-webfont.woff') format('woff'),
+         url('fonts/Roboto-Black-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* -------- Global Styles -------- */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;outline:0;background:transparent;margin:0;padding:0}
+input{margin:0;padding:0}
+body{background:#fff;font-family: 'robotoregular';}
+ol,ul{list-style-type:none}
+:focus{outline:0}
+a{color:#005593;outline:none;text-decoration:none;cursor:pointer}
+a:hover{text-decoration:none !important;}
+.clear{clear:both;font-size:1%;height:0}
+* html .clearfix{height:1%}
+.wht-bg{background-color:#FFF !important;}
+
+
+/* -------- Boostrap Styles -------- */
+.img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{}
+.img-responsive{display:inline;}
+
+
+/*Fancy two side border to the text*/
+.fancy {line-height: 0.5; text-align: center; padding-top:5px;}
+.fancy span { display: inline-block; position: relative;  }
+.fancy span:before, .fancy span:after { content: ""; position: absolute; height: 5px; /*border-bottom: 1px solid white;*/ border-top: 1px solid #333; top: 17px; width: 127px;}
+.fancy span:before { right: 100%; margin-right: 15px;}
+.fancy span:after { left: 100%; margin-left: 15px;}
+
+/* -------- Header/Navigation -------- */
+.navbar-default{border:none;background-color:transparent;}
+.navbar{margin-bottom:0px;}
+.header-wraper{background-color:#f5f5f5;padding:12px 0; border-bottom:solid 1px #d9d9d9;}
+.navig-right{float:right;}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background-color: transparent; color: #212121;}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {color: #212121; background-color: transparent;}
+
+.form-control:focus{box-shadow:none; border-color:#979797;}
+.navbar-brand{padding:0px;height: auto;}
+.carousel-control.left{background-image: none;}
+.carousel-control.right{background-image: none;}
+
+.dropdown-menu > li > a{padding: 6px 20px;}
+.dropdown-menu > li {border-bottom:solid 1px #e5e5e5;}
+.dropdown-menu > li.last{border:none;}
+
+/* -------- Banner -------- */
+.bnr-box{padding:12px 0 0;}
+
+
+.content-row{padding:35px 100px;text-align:center; font-size:20px; color:#4c4c4c; line-height:28px;font-family: 'robotolight';}
+.intro{font-size:17px; line-height:30px; background-color:#ececec; padding:15px;border: 1px solid #e3e3e3;}
+.spice-banner{padding:35px 0 0; text-align:center; }
+.spice-banner h1, .top-prod h1{font-family: 'robotomedium'; font-size:30px; padding-bottom:10px;}
+.spice-banner h2{font-family: 'robotolight'; font-size:20px; padding-bottom:15px;}
+.top-prod{ padding:30px 20px 20px; background-color:#ececec; text-align:center;}
+.prod-row{padding-top:15px;}
+.prod-row .box1{background-color:#FFFFFF; text-align:center;}
+.prod-row p{padding-top:5px;}
+.prod-row p a{color:#FFF; background-color:#484c55; padding:5px 20px;}
+.prod-row p a:hover{color:#FFF; text-decoration:none; background-color:#393C41;}
+.top-prod .prod-box{background-color:#FFFFFF; text-align:center; padding:10px;}
+
+/*hover drop down*/
+ul.nav li.dropdown:hover ul.dropdown-menu{ display: block; }
+
+.inner-page .title h1{font-family: 'robotomedium'; font-size:30px; padding-bottom:10px;}
+.inner-page .title{padding-bottom:20px; padding-top:20px;}
+.product-row{padding-bottom:30px;}
+.each-product{background-color:#ececec; padding:20px; text-align:center; border: solid 1px #e3e3e3; border-radius:3px;}
+
+.about-con{padding-bottom:30px;}
+.about-con p{font-family: 'robotolight'; color:#4c4c4c; font-size:20px; text-align:center; line-height:30px;}
+
+.vision{background-color:#ececec; padding:60px; text-align:center;font-family: 'robotolight';  border-radius:30px; border:solid 1px #e3e3e3; margin-top:32px;}
+.vision p{font-size:20px;}
+.vision h2{padding-bottom:20px; font-family: 'robotoblack';}
+
+.contact{padding:0px 0px 30px; background-color:#ececec; padding:30px; border: 1px solid #e3e3e3;}
+.contact h4{font-family: 'robotoblack'; font-size:18px; padding-bottom:20px;}
+.contact p{ font-size:15px; padding-bottom:20px;}
+.contact strong{color:#626060;}
+.contact a{color:#005593;}
+.contact a:hover{color:#005593;}
+
+.form-con p{font-family: 'robotolight'; color:#4c4c4c; font-size:20px; text-align:center; line-height:30px;}
+.form-con{padding-top:30px; padding-bottom:30px;}
+
+.sub-form{text-align:center;}
+.sub-form .btn-default{background-color:#ed1c24; color:#FFF !important; border:none;}
+.sub-form .btn{width:150px;}
+
+
+/* -------- Footer -------- */
+.footer{background-color:#212121; color:#646464; padding:40px 20px; margin-top:40px;}
+.footer a{background-color:#e9922b; color:#FFFFFF; padding:10px 40px; border-radius:5px;}
+.footer a:hover{text-decoration:none; }
+
